@@ -112,7 +112,7 @@ footer {
 }
 
 /* Laptops (1025px to 1440px) */
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   body {
     background-color: #74b182;
     font-size: 18px;
