@@ -1,0 +1,144 @@
+/* Default styles (applies to all devices) */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  height: 7vh;
+  width: 100vw;
+  background-color: gray;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  height: 7vh;
+  width: 100vw;
+  background-color: gray;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+}
+
+.child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Phones (up to 480px) */
+@media (max-width: 480px) {
+  body {
+    background-color: #b3656b;
+    font-size: 14px;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(1, 100vw);
+    grid-template-rows: repeat(3, 28.66vh);
+  }
+
+  .div1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background-color: rgb(255, 0, 0);
+  }
+
+  .div2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-color: rgb(133, 109, 12);
+  }
+
+  .div3 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    background-color: rgb(255, 196, 0);
+  }
+}
+
+/* Tablets (481px to 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    background-color: #396c75;
+    font-size: 16px;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(2, 43vh);
+  }
+
+  .div1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background-color: rgb(255, 0, 0);
+  }
+
+  .div2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-color: rgb(133, 109, 12);
+  }
+
+  .div3 {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    background-color: rgb(255, 196, 0);
+  }
+}
+
+/* Laptops (1025px to 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    background-color: #74b182;
+    font-size: 18px;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33vw);
+    grid-template-rows: repeat(2, 43vh);
+  }
+
+  .div1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    background-color: rgb(255, 0, 0);
+  }
+
+  .div2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    background-color: rgb(133, 109, 12);
+  }
+
+  .div3 {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+    background-color: rgb(255, 196, 0);
+  }
+}
